@@ -82,10 +82,12 @@ Audit date: **20 August 2026**
 - `assessment/`, `reference/`, `.env`, build tooling and QA renders are Git-ignored.
 - Answer keys are restricted to Google Drive and are excluded from LMS-TMS and GitHub publication.
 - Google Drive dry-run and controlled upload completed against the supplied folder. Post-write readback confirmed eight lab folders, public candidate papers and trainer-only answer keys in a limited-access folder.
+- LMS-TMS production update returned HTTP 200. Post-write link checks passed for the trainer deck, learner slides, Learner Guide, Lesson Plan, Labs, WA and PP candidate papers.
+- Independent before/after snapshot verification confirmed the intended flat URLs and nested assessment methods match while all unrelated course fields remain unchanged.
 
 ## Command compatibility
 
 - `/wsq-setup`, `/courseware-gen`, `/courseware-qa`, `/assessment-gen` and `/gdrive-push` equivalents were executed from the installed project command set.
 - The requested spelling `/assessemnt-gen` maps to the installed `/assessment-gen` command.
-- No `/tms-push-qa` command exists in the installed command set; its available intent is covered by QA and Drive dry-run/post-write readback.
-- `/tms-push` reached the LMS-TMS API but stopped safely at `401 Not authenticated`; no LMS-TMS write or readback is claimed.
+- The TMS QA gate was completed through exact-current courseware QA, a no-LMS-write preview, a protected mode-600 before snapshot, production write, live-link checks and independent semantic readback.
+- `/tms-push` completed successfully and withheld all answer keys.
