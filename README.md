@@ -2,6 +2,15 @@
 
 WSQ courseware for **TGS-2022015368**, version **v11.0**.
 
+| Course detail | Information |
+|---|---|
+| Course code | `TGS-2022015368` |
+| Programme | WSQ (SkillsFuture Singapore) |
+| Duration | 2 days, 16 hours (including 2-hour assessment) |
+| Registration | [View course details and register](https://www.tertiarycourses.com.sg/wsq-3d-modelling-with-blender-for-beginners.html) |
+| Funding | Up to 70% WSQ course fee funding for eligible learners (50% baseline for Singapore Citizens/PRs aged 21+; 70% for Singapore Citizens aged 40+ under MCES or SME-sponsored learners). Eligibility and terms apply - see the course page. |
+| Provider | Tertiary Infotech Academy Pte Ltd |
+
 ## Learner materials
 
 - `courseware/` — visual course slides, Learner Guide and Lesson Plan
